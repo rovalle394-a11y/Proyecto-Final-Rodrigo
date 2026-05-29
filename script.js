@@ -18,9 +18,7 @@ if (localStorage.getItem("tema") === "dark") {
   document.body.classList.add("dark");
 }
 
-/* =========================
-ACTIVIDAD RECIENTE
-========================= */
+/*Actividad Reciente*/
 
 function guardarActividad(texto){
 
@@ -40,9 +38,7 @@ JSON.stringify(actividades)
 
 }
 
-/* =========================
-DATOS DE RECETAS
-========================= */
+/*Datos de Recetas*/
 
 const recetasData = {
   tacos: {
@@ -174,9 +170,7 @@ const recetasData = {
   }
 };
 
-/* =========================
-CARGAR RECETA SEGÚN URL
-========================= */
+/*Cargar Receta*/
 
 const params = new URLSearchParams(window.location.search);
 const recetaId = params.get("id") || "tacos";
@@ -323,9 +317,7 @@ if (listaFavoritas) {
 
 
 
-/* =========================
-ONBOARDING
-========================= */
+/*Onboarding*/
 
 const onboarding = document.getElementById("onboarding");
 const cerrarOnboarding = document.getElementById("cerrarOnboarding");
@@ -350,9 +342,7 @@ localStorage.setItem("onboardingVisto", "true");
 
 }
 
-/* =========================
-TAMAÑO DE FUENTE
-========================= */
+/*Tamaño de Fuente*/
 
 const botonesFuente = document.querySelectorAll(".btn-fuente");
 
@@ -379,9 +369,7 @@ botonesFuente.forEach(boton => {
 const fuenteGuardada = localStorage.getItem("tamanoFuente") || "normal";
 aplicarFuente(fuenteGuardada);
 
-/* =========================
-BUSCADOR Y FILTROS DE RECETAS
-========================= */
+/*Buscador y Filtros de Receta*/
 
 const buscarRecetaFiltro = document.getElementById("buscarRecetaFiltro");
 const filtroCategoria = document.getElementById("filtroCategoria");
@@ -496,9 +484,7 @@ if(limpiarBusqueda){
   });
 }
 
-/* =========================
-BUSCADOR HOME
-========================= */
+/*Buscador Home*/
 
 const buscarHome = document.getElementById("buscarReceta");
 
@@ -525,9 +511,7 @@ if (buscarHome) {
   });
 }
 
-/* =========================
-ELIMINAR FAVORITOS
-========================= */
+/*Eliminar Favoritos*/
 
 document.addEventListener("click", function(e){
 
@@ -557,9 +541,7 @@ location.reload();
 
 });
 
-/* =========================
-MOSTRAR ACTIVIDAD
-========================= */
+/*Mostrar Actividad*/
 
 const listaActividad =
 document.getElementById("listaActividad");
