@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard - Cocina Fácil</title>
+
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.cdnfonts.com/css/coolvetica" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/caviar-dreams" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+<div class="logo">
+<span class="logo-cocina">Cocina</span>
+<span class="logo-facil">Fácil</span>
+</div>
+
+<nav>
+<ul>
+<li><a href="index.html">Inicio</a></li>
+<li><a href="recetas.html">Recetas</a></li>
+<li><a href="categorias.html">Categorías</a></li>
+<li><a href="menu.html">Menú semanal</a></li>
+<li><a href="dashboard.html">Dashboard</a></li>
+</ul>
+</nav>
+
+<button id="modoOscuro">Modo oscuro</button>
+
+<div class="controles-accesibilidad" aria-label="Controles de accesibilidad">
+  <button class="btn-fuente" data-size="normal">A</button>
+  <button class="btn-fuente" data-size="grande">A+</button>
+  <button class="btn-fuente" data-size="extra">A++</button>
+</div>
+
+</header>
+
+<main class="dashboard">
+
+<section class="dashboard-hero">
+<h2>Mi dashboard</h2>
+<p>Consulta tus recetas guardadas y recomendaciones personalizadas.</p>
+</section>
+
+<section class="actividad-reciente">
+
+<h2>Actividad reciente</h2>
+
+<div class="actividad-card">
+
+<ul id="listaActividad">
+<li>No hay actividad reciente.</li>
+</ul>
+
+</div>
+
+</section>
+
+<section class="dashboard-resumen">
+<div class="resumen-card">
+<h3 id="totalFavoritas">0</h3>
+<p>Recetas favoritas</p>
+</div>
+
+<div class="resumen-card">
+<h3>4</h3>
+<p>Categorías disponibles</p>
+</div>
+
+<div class="resumen-card">
+<h3>7</h3>
+<p>Días de menú semanal</p>
+</div>
+</section>
+
+<section class="favoritas">
+<h2>Recetas guardadas</h2>
+<div id="listaFavoritas" class="contenedor-recetas"></div>
+<section class="recomendaciones">
+
+<h2>Recomendaciones para ti</h2>
+
+<div class="contenedor-recetas">
+
+<article class="tarjeta-receta">
+
+<img src="img/pasta.jpg" alt="Pasta italiana">
+
+<h3>Pasta italiana</h3>
+
+<p>Recomendada según tus recetas favoritas.</p>
+
+<a href="receta.html?id=pasta">Ver receta</a>
+
+</article>
+
+<article class="tarjeta-receta">
+
+<img src="img/pancakes.jpg" alt="Hotcakes">
+
+<h3>Hotcakes</h3>
+
+<p>Perfectos para desayunos rápidos.</p>
+
+<a href="receta.html?id=hotcakes">Ver receta</a>
+
+</article>
+
+</div>
+
+</section>
+
+<p id="mensajeVacio" class="mensaje-vacio">Aún no tienes recetas guardadas.</p>
+</section>
+
+</main>
+
+<footer>
+<p>© 2026 Cocina Fácil</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

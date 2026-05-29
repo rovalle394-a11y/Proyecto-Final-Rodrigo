@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Receta - Tacos Mexicanos</title>
+
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.cdnfonts.com/css/coolvetica" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/caviar-dreams" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<span class="logo-cocina">Cocina</span>
+<span class="logo-facil">Fácil</span>
+</div>
+
+<nav>
+<ul>
+<li><a href="index.html">Inicio</a></li>
+<li><a href="recetas.html">Recetas</a></li>
+<li><a href="categorias.html">Categorías</a></li>
+<li><a href="menu.html">Menú semanal</a></li>
+<li><a href="dashboard.html">Dashboard</a></li>
+</ul>
+</nav>
+
+<button id="modoOscuro">Modo oscuro</button>
+
+<div class="controles-accesibilidad" aria-label="Controles de accesibilidad">
+  <button class="btn-fuente" data-size="normal">A</button>
+  <button class="btn-fuente" data-size="grande">A+</button>
+  <button class="btn-fuente" data-size="extra">A++</button>
+</div>
+
+</header>
+
+
+<main>
+
+<section class="receta">
+
+<h2 id="recetaTitulo">Tacos Mexicanos</h2>
+
+<img id="recetaImagen" src="img/tacos.jpg" alt="Tacos mexicanos">
+
+<p><strong>Tiempo:</strong> <span id="recetaTiempo">30 minutos</span></p>
+<p><strong>Dificultad:</strong> <span id="recetaDificultad">Fácil</span></p>
+<p><strong>Porciones:</strong> <span id="recetaPorciones">4</span></p>
+
+<button 
+  class="btn-favorito"
+  data-titulo="Tacos Mexicanos"
+  data-imagen="img/tacos.jpg"
+  data-descripcion="Receta tradicional mexicana fácil de preparar.">
+  Guardar en favoritos
+</button>
+
+<p id="mensajeFavorito" class="mensaje-exito" aria-live="polite"></p>
+
+<h3>Ingredientes</h3>
+<ul id="recetaIngredientes"></ul>
+
+<h3>Preparación</h3>
+<ol id="recetaPreparacion"></ol>
+
+</section>
+</main>
+
+<footer>
+
+<p>© 2026 Cocina Fácil</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cocina Fácil - Prototipo</title>
+
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.cdnfonts.com/css/coolvetica" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/caviar-dreams" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div id="onboarding" class="onboarding-overlay">
+
+<div class="onboarding-card">
+
+<h2>Bienvenido a Cocina Fácil 👋</h2>
+
+<p>
+Explora recetas, usa filtros por categoría,
+guarda tus recetas favoritas y consulta tu dashboard personalizado.
+</p>
+
+<ul>
+<li>🔍 Busca recetas fácilmente</li>
+<li>❤️ Guarda favoritas</li>
+<li>🌙 Activa modo oscuro</li>
+<li>📱 Diseño optimizado para móvil</li>
+</ul>
+
+<button id="cerrarOnboarding">
+Entendido
+</button>
+
+</div>
+
+</div>
+
+<header>
+
+<div class="logo">
+<span class="logo-cocina">Cocina</span>
+<span class="logo-facil">Fácil</span>
+</div>
+
+<nav>
+<ul>
+<li><a href="index.html">Inicio</a></li>
+<li><a href="recetas.html">Recetas</a></li>
+<li><a href="categorias.html">Categorías</a></li>
+<li><a href="menu.html">Menú semanal</a></li>
+<li><a href="dashboard.html">Dashboard</a></li>
+</ul>
+</nav>
+
+<button id="modoOscuro">Modo oscuro</button>
+
+<div class="controles-accesibilidad" aria-label="Controles de accesibilidad">
+  <button class="btn-fuente" data-size="normal">A</button>
+  <button class="btn-fuente" data-size="grande">A+</button>
+  <button class="btn-fuente" data-size="extra">A++</button>
+</div>
+
+</header>
+
+<main>
+
+<section class="buscador">
+
+<h2>Buscar recetas</h2>
+
+<label for="buscarReceta" class="sr-only">Buscar receta</label>
+<input id="buscarReceta" type="text" placeholder="Buscar receta...">
+
+<button type="button" aria-label="Buscar receta">Buscar</button>
+
+</section>
+
+
+<section class="recetas-destacadas">
+
+<h2>Recetas destacadas</h2>
+
+<div class="contenedor-recetas">
+
+<article class="tarjeta-receta">
+
+<img src="img/tacos.jpg" alt="Tacos mexicanos">
+
+<h3>Tacos mexicanos</h3>
+
+<p>Receta tradicional mexicana fácil de preparar.</p>
+
+<a href="receta.html?id=tacos">Ver receta</a>
+
+</article>
+
+
+<article class="tarjeta-receta">
+
+<img src="img/pasta.jpg" alt="Pasta italiana">
+
+<h3>Pasta italiana</h3>
+
+<p>Pasta cremosa con ingredientes sencillos.</p>
+
+<a href="receta.html?id=pasta">Ver receta</a>
+
+</article>
+
+
+<article class="tarjeta-receta">
+
+<img src="img/pancakes.jpg" alt="Hotcakes">
+
+<h3>Hotcakes</h3>
+
+<p>Desayuno clásico rápido y delicioso.</p>
+
+<a href="receta.html?id=hotcakes">Ver receta</a>
+
+</article>
+
+</div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+<p>© 2026 Cocina Fácil - Prototipo UX/UI</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
