@@ -2,10 +2,6 @@
 
 Proyecto desarrollado para la materia Interface y experiencia de usuarios en web.
 
-## Descripción
-
-Cocina Fácil es un prototipo web enfocado en mejorar la experiencia del usuario al momento de consultar recetas de cocina. El proyecto incluye navegación intuitiva, filtros dinámicos, accesibilidad, modo oscuro y un dashboard personalizado.
-
 ## Tecnologías utilizadas
 
 * HTML
@@ -37,7 +33,7 @@ Cocina Fácil es un prototipo web enfocado en mejorar la experiencia del usuario
 
 Acceder al enlace publicado del proyecto:
 
-[Agregar aquí el enlace de GitHub Pages]
+https://rovalle394-a11y.github.io/Proyecto-Final-Rodrigo/
 
 ### Opción 2: Ejecución local
 
@@ -48,10 +44,3 @@ Acceder al enlace publicado del proyecto:
 ## Integrante
 
 Rodrigo Ovalle Negrete
-
-## Materia
-
-Interface y experiencia de usuarios en web
-
-Universidad Autónoma de Nuevo León
-Facultad de Ciencias Físico Matemáticas
